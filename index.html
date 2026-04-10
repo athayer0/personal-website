@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Aaron Thayer — CS student at BYU building intelligent systems" />
+  <title>Aaron Thayer | Portfolio</title>
+
+  <!-- Google Fonts: Inter for body, JetBrains Mono for code/tags -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+
+  <!-- ============================================================
+       NAVIGATION
+  ============================================================ -->
+  <nav id="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <!-- Logo / monogram — swap the text if you want a different mark -->
+      <a class="nav-logo" href="#hero">AT</a>
+
+      <!-- Desktop links -->
+      <ul class="nav-links" role="list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <!-- Mobile hamburger -->
+      <button class="nav-burger" id="burger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile drawer -->
+  <div class="nav-mobile" id="mobileMenu" role="menu">
+    <a href="#about"      role="menuitem">About</a>
+    <a href="#experience" role="menuitem">Experience</a>
+    <a href="#projects"   role="menuitem">Projects</a>
+    <a href="#skills"     role="menuitem">Skills</a>
+    <a href="#contact"    role="menuitem">Contact</a>
+  </div>
+
+
+  <!-- ============================================================
+       HERO
+  ============================================================ -->
+  <section id="hero">
+    <div class="container">
+      <div class="hero-content">
+        <p class="hero-eyebrow">Hello, I'm</p>
+
+        <h1 class="hero-name">Aaron Thayer</h1>
+
+        <!--
+          TAGLINE — edit this one line to update the hero subtitle.
+        -->
+        <p class="hero-tagline">
+          CS student at BYU building intelligent systems — from real-time
+          AI motion analysis to high-performance simulations.
+        </p>
+
+        <div class="hero-cta">
+          <!--
+            LINKS — replace # with your actual GitHub and LinkedIn URLs.
+            GitHub profile:  https://github.com/athayer0
+            LinkedIn:        find your public URL in your profile settings
+          -->
+          <a class="btn btn-primary" href="https://github.com/athayer0" target="_blank" rel="noopener">
+            <!-- GitHub SVG icon -->
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+            </svg>
+            GitHub
+          </a>
+
+          <a class="btn btn-outline" href="https://www.linkedin.com/in/aaron-thayer" target="_blank" rel="noopener">
+            <!-- LinkedIn SVG icon -->
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="hero-scroll" aria-hidden="true">
+      <span>scroll</span>
+      <div class="hero-scroll-line"></div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       ABOUT
+  ============================================================ -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title reveal">About Me</h2>
+
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            I'm a Computer Science student at Brigham Young University (graduating April 2027)
+            with minors in Spanish and Music. I carry a 4.0 GPA and spend most of my time at
+            the intersection of machine learning, systems engineering, and real-world impact.
+          </p>
+          <p>
+            My research experience spans AI-powered biomechanical analysis for elite athletes,
+            molecular dynamics simulation on HPC clusters, and evaluating large language models.
+            I love picking up new tech stacks and shipping things that work.
+          </p>
+          <p>
+            Outside of code I play piano, speak Spanish, and follow track &amp; field closely —
+            which is how I ended up building software for pole vaulters.
+          </p>
+        </div>
+
+        <!-- Stat cards — swap numbers as you see fit -->
+        <div class="about-stats reveal-stagger">
+          <div class="stat-card">
+            <div class="stat-value">4.0</div>
+            <div class="stat-label">GPA</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value">4+</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value">95%</div>
+            <div class="stat-label">Model Accuracy</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value">10+</div>
+            <div class="stat-label">Technologies</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       EXPERIENCE
+  ============================================================ -->
+  <section id="experience" class="section">
+    <div class="container">
+      <h2 class="section-title reveal">Experience</h2>
+
+      <div class="timeline">
+
+        <!-- ── Job 1 ─────────────────────────────────────────── -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-header">
+            <span class="timeline-role">Research Assistant</span>
+            <span class="timeline-dates">Oct 2025 – Present</span>
+          </div>
+          <div class="timeline-company">BYU PRISM Group · Provo, UT</div>
+          <ul class="timeline-bullets">
+            <li>
+              Built a React / Node.js web platform delivering real-time AI biomechanical
+              feedback to collegiate track athletes during training sessions.
+            </li>
+            <li>
+              Integrated a fine-tuned YOLO computer vision model achieving 95% detection
+              accuracy on pole vault video for automatic rep segmentation and form scoring.
+            </li>
+            <li>
+              Designed REST APIs and a WebSocket pipeline to stream processed video
+              annotations to coaches with sub-second latency.
+            </li>
+          </ul>
+        </div>
+
+        <!-- ── Job 2 ─────────────────────────────────────────── -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-header">
+            <span class="timeline-role">AI Data Annotator</span>
+            <span class="timeline-dates">Jul 2025 – Oct 2025</span>
+          </div>
+          <div class="timeline-company">DataAnnotation · Remote</div>
+          <ul class="timeline-bullets">
+            <li>
+              Evaluated and rated AI-generated responses across reasoning, coding, and
+              instruction-following tasks to improve model alignment quality.
+            </li>
+            <li>
+              Wrote Python scripts to batch-test model outputs against custom rubrics,
+              accelerating evaluation throughput by an estimated 40%.
+            </li>
+          </ul>
+        </div>
+
+        <!-- ── Job 3 ─────────────────────────────────────────── -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-header">
+            <span class="timeline-role">Research Assistant</span>
+            <span class="timeline-dates">2022 – 2023</span>
+          </div>
+          <div class="timeline-company">BYU Chemical &amp; Biological Engineering · Provo, UT</div>
+          <ul class="timeline-bullets">
+            <li>
+              Developed Python and Bash automation pipelines for large-scale molecular
+              dynamics (MD) simulations run on the BYU Fulton Supercomputing Lab cluster.
+            </li>
+            <li>
+              Reduced manual job-submission overhead by scripting SLURM workflows,
+              enabling researchers to queue and monitor hundreds of parallel simulation runs.
+            </li>
+          </ul>
+        </div>
+
+        <!-- ── Job 4 ─────────────────────────────────────────── -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-header">
+            <span class="timeline-role">Technical Intern</span>
+            <span class="timeline-dates">Summer 2022</span>
+          </div>
+          <div class="timeline-company">Ensign Natural Resources · Salt Lake City, UT</div>
+          <ul class="timeline-bullets">
+            <li>
+              Ran PROSPER reservoir simulation models to optimize production parameters
+              for active oil wells in the company's portfolio.
+            </li>
+            <li>
+              Produced sensitivity analyses and visualizations that informed engineering
+              decisions on lift method selection and tubing design.
+            </li>
+          </ul>
+        </div>
+
+      </div><!-- /timeline -->
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       PROJECTS
+       Replace # hrefs with real GitHub repo URLs when ready.
+  ============================================================ -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title reveal">Projects</h2>
+
+      <div class="projects-grid reveal-stagger">
+
+        <!-- ── Project 1 ─────────────────────────────────────── -->
+        <div class="project-card">
+          <div class="project-card-top">
+            <span class="project-icon" aria-hidden="true">📁</span>
+            <div class="project-links">
+              <!--
+                Replace # with the actual GitHub repo link.
+                Example: href="https://github.com/athayer0/prism-platform"
+              -->
+              <a href="#" target="_blank" rel="noopener" aria-label="View PRISM Platform on GitHub">
+                <!-- GitHub icon -->
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <h3 class="project-title">PRISM Athlete Feedback Platform</h3>
+
+          <p class="project-description">
+            Real-time biomechanical analysis web app for collegiate track athletes. A
+            YOLO-based computer vision model processes pole vault video to detect form
+            breakdowns and stream annotated feedback to coaches during live training.
+          </p>
+
+          <div class="project-tags">
+            <span class="tag">React</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">YOLO</span>
+            <span class="tag">WebSocket</span>
+            <span class="tag">Python</span>
+          </div>
+        </div>
+
+        <!-- ── Project 2 ─────────────────────────────────────── -->
+        <div class="project-card">
+          <div class="project-card-top">
+            <span class="project-icon" aria-hidden="true">📁</span>
+            <div class="project-links">
+              <!--
+                Replace # with the actual GitHub repo link.
+                Example: href="https://github.com/athayer0/md-pipeline"
+              -->
+              <a href="#" target="_blank" rel="noopener" aria-label="View MD Pipeline on GitHub">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <h3 class="project-title">Molecular Dynamics HPC Pipeline</h3>
+
+          <p class="project-description">
+            Automated workflow for running and managing large-scale molecular dynamics
+            simulations on the BYU Fulton Supercomputing cluster. Includes SLURM job
+            orchestration, result aggregation, and Python-based analysis scripts.
+          </p>
+
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Bash</span>
+            <span class="tag">SLURM</span>
+            <span class="tag">HPC</span>
+            <span class="tag">NumPy</span>
+          </div>
+        </div>
+
+        <!-- ── Project 3 ─────────────────────────────────────── -->
+        <!--
+          PLACEHOLDER — replace this card with a real project.
+          Suggested ideas: a personal side project, open-source
+          contribution, class project, or hackathon entry.
+        -->
+        <div class="project-card">
+          <div class="project-card-top">
+            <span class="project-icon" aria-hidden="true">📁</span>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener" aria-label="View project on GitHub">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- TODO: Replace title, description, and tags with a real project -->
+          <h3 class="project-title">Coming Soon</h3>
+
+          <p class="project-description">
+            This card is a placeholder — swap in a real project here. Great candidates:
+            a personal app, a class capstone, an open-source contribution, or a
+            hackathon build. Edit the title, description, tags, and GitHub link above.
+          </p>
+
+          <div class="project-tags">
+            <span class="tag">Your</span>
+            <span class="tag">Tech</span>
+            <span class="tag">Stack</span>
+          </div>
+        </div>
+
+      </div><!-- /projects-grid -->
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SKILLS
+  ============================================================ -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="section-title reveal">Skills</h2>
+
+      <div class="skills-grid reveal-stagger">
+
+        <!-- Languages -->
+        <div class="skill-group">
+          <div class="skill-group-title">Languages</div>
+          <div class="skill-pills">
+            <span class="skill-pill">JavaScript</span>
+            <span class="skill-pill">TypeScript</span>
+            <span class="skill-pill">Python</span>
+            <span class="skill-pill">Go</span>
+            <span class="skill-pill">Java</span>
+            <span class="skill-pill">C++</span>
+            <span class="skill-pill">C</span>
+            <span class="skill-pill">SQL</span>
+            <span class="skill-pill">R</span>
+            <span class="skill-pill">Bash</span>
+            <span class="skill-pill">HTML/CSS</span>
+          </div>
+        </div>
+
+        <!-- Frameworks & Libraries -->
+        <div class="skill-group">
+          <div class="skill-group-title">Frameworks &amp; Libraries</div>
+          <div class="skill-pills">
+            <span class="skill-pill">React</span>
+            <span class="skill-pill">React Native</span>
+            <span class="skill-pill">Node.js</span>
+            <span class="skill-pill">Express</span>
+            <span class="skill-pill">YOLO</span>
+            <span class="skill-pill">NumPy</span>
+            <span class="skill-pill">Pandas</span>
+          </div>
+        </div>
+
+        <!-- Tools & Platforms -->
+        <div class="skill-group">
+          <div class="skill-group-title">Tools &amp; Platforms</div>
+          <div class="skill-pills">
+            <span class="skill-pill">Git / GitHub</span>
+            <span class="skill-pill">SLURM / HPC</span>
+            <span class="skill-pill">Linux</span>
+            <span class="skill-pill">REST APIs</span>
+            <span class="skill-pill">WebSocket</span>
+            <span class="skill-pill">PROSPER</span>
+            <span class="skill-pill">VS Code</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       CONTACT
+  ============================================================ -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title reveal">Get In Touch</h2>
+
+      <div class="contact-inner reveal">
+        <p class="contact-tagline">
+          I'm currently open to internships, research collaborations, and interesting
+          side projects. Whether you have a question or just want to say hello — my
+          inbox is always open.
+        </p>
+
+        <div class="contact-links">
+
+          <!-- Email -->
+          <a class="contact-row" href="mailto:athayer0@byu.edu">
+            <div class="contact-icon" aria-hidden="true">
+              <!-- Email icon -->
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </div>
+            <div>
+              <div class="contact-label">Email</div>
+              <div class="contact-value">athayer0@byu.edu</div>
+            </div>
+          </a>
+
+          <!-- GitHub -->
+          <a class="contact-row" href="https://github.com/athayer0" target="_blank" rel="noopener">
+            <div class="contact-icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+              </svg>
+            </div>
+            <div>
+              <div class="contact-label">GitHub</div>
+              <div class="contact-value">github.com/athayer0</div>
+            </div>
+          </a>
+
+          <!-- LinkedIn -->
+          <!--
+            Replace the href # with your actual LinkedIn URL.
+            Example: https://www.linkedin.com/in/aaron-thayer-xxxxxxx/
+          -->
+          <a class="contact-row" href="https://www.linkedin.com/in/aaron-thayer" target="_blank" rel="noopener">
+            <div class="contact-icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+            </div>
+            <div>
+              <div class="contact-label">LinkedIn</div>
+              <div class="contact-value">Aaron Thayer</div>
+            </div>
+          </a>
+
+          <!-- Phone (optional — comment out if you don't want it public) -->
+          <a class="contact-row" href="tel:+18018503629">
+            <div class="contact-icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.82a19.79 19.79 0 01-3.07-8.67A2 2 0 012 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+              </svg>
+            </div>
+            <div>
+              <div class="contact-label">Phone</div>
+              <div class="contact-value">(801) 850-3629</div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer>
+    <p>
+      Designed &amp; built by <a href="#hero">Aaron Thayer</a> &nbsp;·&nbsp;
+      <a href="https://github.com/athayer0" target="_blank" rel="noopener">View Source</a>
+    </p>
+  </footer>
+
+
+  <!-- ============================================================
+       JAVASCRIPT
+       All behaviour: nav scroll, mobile menu, Intersection Observer
+  ============================================================ -->
+  <script src="script.js" defer></script>
+
+</body>
+</html>
