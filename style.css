@@ -275,6 +275,15 @@ ul { list-style: none; }
   margin-bottom: 40px;
   opacity: 0;
   animation: fadeUp 0.6s 0.6s ease forwards;
+  text-align: center;
+}
+
+.hero-tagline-degree {
+  display: block;
+  text-align: center;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 4px;
 }
 
 .hero-cta {
