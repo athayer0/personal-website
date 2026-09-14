@@ -309,6 +309,13 @@ ul { list-style: none; }
 }
 .btn:hover { transform: translateY(-2px); opacity: 1; }
 
+.btn-icon-img {
+  width: 17px;
+  height: 17px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
 .btn-primary {
   background: var(--accent);
   color: #080d1a;
