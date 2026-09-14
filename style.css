@@ -288,6 +288,7 @@ ul { list-style: none; }
 
 .hero-cta {
   display: flex;
+  justify-content: center;
   gap: 16px;
   flex-wrap: wrap;
   opacity: 0;
@@ -557,9 +558,9 @@ ul { list-style: none; }
 
 /* App icon image (used in place of the emoji glyph) */
 .project-icon-img {
-  width: 40px;
-  height: 40px;
-  border-radius: 10px;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 6px;
   object-fit: cover;
 }
 
@@ -761,5 +762,5 @@ footer a:hover { color: var(--accent); }
   .projects-grid { grid-template-columns: 1fr; }
   .skills-grid   { grid-template-columns: 1fr; }
 
-  .hero-cta { flex-direction: column; align-items: flex-start; }
+  .hero-cta { flex-direction: column; align-items: center; }
 }
