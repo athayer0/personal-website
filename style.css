@@ -424,7 +424,8 @@ ul { list-style: none; }
 /* ============================================================
    EXPERIENCE: vertical timeline
 ============================================================ */
-#experience { background: var(--bg-base); }
+#experience { background: var(--bg-base); padding-bottom: 50px; }
+#leadership { padding-top: 50px; }
 
 .timeline {
   position: relative;
@@ -552,6 +553,14 @@ ul { list-style: none; }
   font-size: 1.6rem;
   line-height: 1;
   flex-shrink: 0;
+}
+
+/* App icon image (used in place of the emoji glyph) */
+.project-icon-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  object-fit: cover;
 }
 
 .project-links { display: flex; gap: 12px; }
