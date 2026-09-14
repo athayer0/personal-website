@@ -616,10 +616,11 @@ ul { list-style: none; }
    SKILLS: grouped grid
 ============================================================ */
 #skills { background: var(--bg-base); }
+#skills .container { max-width: 1220px; }
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
   gap: 24px;
 }
 
@@ -646,6 +647,7 @@ ul { list-style: none; }
 .skill-pills {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 10px;
 }
 
