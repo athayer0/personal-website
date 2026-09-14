@@ -299,11 +299,14 @@ ul { list-style: none; }
 .btn {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
-  padding: 12px 28px;
+  width: 190px;
+  padding: 12px 20px;
   border-radius: var(--radius);
   font-size: 0.9rem;
   font-weight: 600;
+  white-space: nowrap;
   cursor: pointer;
   transition: transform var(--transition), box-shadow var(--transition), background var(--transition);
 }
