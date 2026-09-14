@@ -515,10 +515,11 @@ ul { list-style: none; }
    PROJECTS: card grid
 ============================================================ */
 #projects { background: var(--bg-surface); }
+#projects .container { max-width: 1220px; }
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
   gap: 24px;
 }
 
