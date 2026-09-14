@@ -1,5 +1,5 @@
 /* ============================================================
-   CSS CUSTOM PROPERTIES — change accent color or background
+   CSS CUSTOM PROPERTIES: change accent color or background
    here to retheme the entire site in seconds.
 ============================================================ */
 :root {
@@ -79,7 +79,7 @@ ul { list-style: none; }
   border-radius: 2px;
 }
 
-/* Scroll-reveal animation — JS adds .visible to trigger */
+/* Scroll-reveal animation: JS adds .visible to trigger */
 .reveal {
   opacity: 0;
   transform: translateY(28px);
@@ -422,7 +422,7 @@ ul { list-style: none; }
 }
 
 /* ============================================================
-   EXPERIENCE — vertical timeline
+   EXPERIENCE: vertical timeline
 ============================================================ */
 #experience { background: var(--bg-base); }
 
@@ -512,7 +512,7 @@ ul { list-style: none; }
 }
 
 /* ============================================================
-   PROJECTS — card grid
+   PROJECTS: card grid
 ============================================================ */
 #projects { background: var(--bg-surface); }
 
@@ -590,7 +590,7 @@ ul { list-style: none; }
 }
 
 /* ============================================================
-   SKILLS — grouped grid
+   SKILLS: grouped grid
 ============================================================ */
 #skills { background: var(--bg-base); }
 
@@ -724,7 +724,7 @@ footer a { color: var(--text-muted); }
 footer a:hover { color: var(--accent); }
 
 /* ============================================================
-   RESPONSIVE — Tablet
+   RESPONSIVE: Tablet
 ============================================================ */
 @media (max-width: 900px) {
   .about-grid { grid-template-columns: 1fr; gap: 40px; }
@@ -732,7 +732,7 @@ footer a:hover { color: var(--accent); }
 }
 
 /* ============================================================
-   RESPONSIVE — Mobile
+   RESPONSIVE: Mobile
 ============================================================ */
 @media (max-width: 640px) {
   .section { padding: 72px 0; }
