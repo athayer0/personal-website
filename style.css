@@ -244,6 +244,7 @@ ul { list-style: none; }
 .hero-content {
   position: relative;
   z-index: 1;
+  text-align: center;
 }
 
 /* Small label above the name */
@@ -253,6 +254,7 @@ ul { list-style: none; }
   color: var(--accent);
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  text-align: left;
   margin-bottom: 16px;
   opacity: 0;
   animation: fadeUp 0.6s 0.2s ease forwards;
@@ -272,7 +274,7 @@ ul { list-style: none; }
   font-size: clamp(1rem, 2.5vw, 1.25rem);
   color: var(--text-secondary);
   max-width: 520px;
-  margin-bottom: 40px;
+  margin: 0 auto 40px;
   opacity: 0;
   animation: fadeUp 0.6s 0.6s ease forwards;
   text-align: center;
